@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="fr">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style/body.css">
+        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/portfolio.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" href="img/logo-site.png">
+        <title>Mon site Web Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/bangkok.jpg" class="header-img" id="top">
+            <div class="menu">
+                <p class="name-header"><a href="#top">ADRIEN CAMBIER</a></p>
+                <nav class="nav-links">
+                    <div class="name-menu">
+                        <p class="name-menu-text"><a href="#top">ADRIEN CAMBIER</a></p>
+                        <img src="img/fermer.png" class="close">
+                    </div>
+                    <ul>
+                        <li><a class="links" href="index.html#propos">À propos de moi</a></li>
+                        <li><a class="links" href="index.html#skills">Mes compétences</a></li>
+                        <li><a class="links" href="index.html#parcours">Mon parcours</a></li>
+                        <li><a class="links" href="index.html#portfolio">Mon Portfolio</a></li>
+                        <li><a class="links" href="index.html#loisirs">Mes loisirs</a></li>
+                        <li><a class="links" href="index.html#contact">Me contacter</a></li>
+                    </ul>
+                </nav>
+                <div class="background-nav hidden"></div>
+                <img src="img/hamburger.png" class="hamburger-menu">
+                </div>
+            </div>
+            <div class="header-content">
+                <p class="description-text">Développeur web (En cours de formation)</p>
+                <p class="name-text">Adrien Cambier</p>
+                <nav class="social-links">
+                    <a href="https://cambier-adrien.github.io/Adrien%20Cambier%20CV.pdf"><img src="img/cv.png" class="social-media"></a>
+                    <a href="https://fr-fr.facebook.com/adrien.cambier.71"><img src="img/facebook.png" class="social-media"></a>
+                    <a href="https://www.instagram.com/adri1.cr/"><img src="img/instagram.png" class="social-media"></a>
+                    <a href="https://www.linkedin.com/in/adrien-cambier-0820b127b/"><img src="img/linkedin.png" class="social-media"></a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="black-section">
+                <div class="title-section">
+                    <h1>Mes Projets</h1>
+                    <div class="h1-underline"></div>
+                </div>
+                <p class="introduction-text">
+                    Voici tous les projets que j'ai pu réaliser refletant toutes les compétences que j'ai pu acquérir durant mes années d'études.
+                    Vous pouvez consulter la plupart de mes réalisations triées par année ainsi que par thème ci-dessous.</p>
+                <div class="separation">
+                    <div class="separation-line"></div>
+                    <div class="separation-point"></div>
+                    <div class="separation-line"></div>
+                </div>
+                <div class="project-selection">
+                    <div class="project-content year underline" id="project-year">
+                        <div class="project-text">
+                            <img src="img/calendrier.png" class="project-logo">
+                            <p class="language-text">Tout</p>
+                            <img src="img/vers-le-bas.png" class="project-logo rotate90deg">
+                        </div>
+                        <div class="project-selector" id="year">
+                            <ul>
+                                <li class="language-selector-text" id="y2023"><img src="img/verifier.png" class="language-logo invisible">2023</li>
+                                <li class="language-selector-text" id="y2024"><img src="img/verifier.png" class="language-logo invisible">2024</li>
+                                <li class="language-selector-text" id="yAll"><img src="img/verifier.png" class="language-logo">Tout</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-content theme underline" id="project-theme">
+                        <div class="project-text">
+                            <img src="img/search.png" class="project-logo">
+                            <p class="language-text">Tout</p>
+                            <img src="img/vers-le-bas.png" class="project-logo rotate90deg">
+                        </div>
+                        <div class="project-selector" id="theme">
+                            <ul>
+                                <li class="language-selector-text" id="info"><img src="img/verifier.png" class="language-logo invisible">Informatique</li>
+                                <li class="language-selector-text" id="network"><img src="img/verifier.png" class="language-logo invisible">Réseaux</li>
+                                <li class="language-selector-text" id="cyber"><img src="img/verifier.png" class="language-logo invisible">Cybersécurité</li>
+                                <li class="language-selector-text" id="tAll"><img src="img/verifier.png" class="language-logo">Tout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" id="c2023">
+                    <div class="project-content year">
+                        <p class="name-header">2023</p>
+                    </div>
+                    <div class="project-content theme">
+                        <a class="project-box" href="frontend.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Html - Css</p>
+                                <p class="description-title">Création d'une page frontend</p>
+                                <p class="description-theme">J'ai créé un site web sur mes passions avec mon binôme afin d'apprendre le développement web.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="réseau.html">
+                            <div class="theme-box network">Réseaux</div>
+                            <div class="project-description">
+                                <p class="description-theme">Packet Tracer</p>
+                                <p class="description-title">Simulation d'un Réseau Lan</p>
+                                <p class="description-theme">J'ai conçu un petit réseau local interconnecté pour une entreprise.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="thales.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Python - Web</p>
+                                <p class="description-title">Projet Sniffer Ethernet avec Thales</p>
+                                <p class="description-theme">J'ai réalisé un extracteur de trames ainsi qu'une page Web.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="portfolio.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Html - Css - Javascript</p>
+                                <p class="description-title">Réalisation d'un Portfolio</p>
+                                <p class="description-theme">J'ai créé un site web permettant d'afficher mes compétences en ligne.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-container" id="c2024">
+                    <div class="project-content year">
+                        <p class="name-header">2024</p>
+                    </div>
+                    <div class="project-content theme">
+                        <a class="project-box" href="restaurant.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Html - Css - Javascript</p>
+                                <p class="description-title">Conception d'un site Restaurant</p>
+                                <p class="description-theme">J'ai créé un prototype de site web pour un restaurant dans le but de m'entraîner.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="android.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Android Studio - Xml - Java</p>
+                                <p class="description-title">Création d'une application Android</p>
+                                <p class="description-theme">J'ai créé une application androind permettant d'afficher des trames et d'intéragir avec.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="cyber.html">
+                            <div class="theme-box cyber">Cyber</div>
+                            <div class="project-description">
+                                <p class="description-theme">Linux - Réseau - Docker</p>
+                                <p class="description-title">Réaliser un test d'intrusion</p>
+                                <p class="description-theme">J'ai créé un réseau virtuel avec docker et effectué une cyberattaque dessus.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="intranetMSX.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Joomla - Php - Css</p>
+                                <p class="description-title">Migration d'un site web intranet</p>
+                                <p class="description-theme">J'ai effectué une refonte du site web intranet de la mairie de Mouans-Sartoux.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="chatgptMSX.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Html - Css - Javascript - Python</p>
+                                <p class="description-title">Création d'un assistant alimenté avec l'IA</p>
+                                <p class="description-theme">J'ai développé un assistant doté d'une intelligence pour aider les employés dans leurs tâches.</p>
+                            </div>
+                        </a>
+                        <a class="project-box" href="internetMSX.html">
+                            <div class="theme-box info">Info</div>
+                            <div class="project-description">
+                                <p class="description-theme">Wordpress - Css</p>
+                                <p class="description-title">Réalisation d'une charte graphique</p>
+                                <p class="description-theme">J'ai créé un nouveau style pour le site web de la mairie de Mouans-Sartoux.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="name-footer">
+                <p class="title-footer">Adrien Cambier</p>
+                <nav class="social-links">
+                    <a href="https://cambier-adrien.github.io/Adrien%20Cambier%20CV.pdf"><img src="img/cv.png" class="social-media"></a>
+                    <a href="https://fr-fr.facebook.com/adrien.cambier.71"><img src="img/facebook.png" class="social-media"></a>
+                    <a href="https://www.instagram.com/adri1.cr/"><img src="img/instagram.png" class="social-media"></a>
+                    <a href="https://www.linkedin.com/in/adrien-cambier-0820b127b/"><img src="img/linkedin.png" class="social-media"></a>
+                </nav>
+            </div>
+            <div class="name-footer">
+                <p class="title-footer">Ressources</p>
+                <nav class="nav-links-footer">
+                    <ul>
+                        <li><a href="index.html#propos">Qui suis-je</a></li>
+                        <li><a href="index.html#skills">Compétences</a></li>
+                        <li><a href="index.html#parcours">Parcours</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#loisirs">Loisirs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="name-footer">
+                <p class="title-footer">Contact</p>
+                <nav class="nav-links-footer">
+                    <ul>
+                        <li>adriencambier2004@gmail.com</li>
+                        <li>+33 7 49 64 20 93</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="name-footer">
+                <div class="language-selector">
+                    <ul>
+                        <li class="language-selector-text" id="fr"><img src="img/verifier.png" class="language-logo">Français (FR)</li>
+                        <li class="language-selector-text" id="en"><img src="img/verifier.png" class="language-logo invisible">English (UK)</li>
+                    </ul>
+                </div>
+                <div class="language-content underline">
+                    <img src="img/planète.png" class="language-logo">
+                    <p class="language-text">Français (FR)</p>
+                    <img src="img/vers-le-bas.png" class="language-logo">
+                </div>
+                <p class="crédit">©2023 Adrien Cambier, Tous Droits Réservés.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

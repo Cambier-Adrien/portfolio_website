@@ -1,0 +1,133 @@
+/* Footer */
+footer{
+    background-color:rgb(0, 0, 23);
+    display:flex;
+    justify-content:center;
+}
+.name-footer{
+    margin:2rem;
+}
+.title-footer{
+    color:white;
+    font-family:Cardo;
+    font-size:1.5rem;
+}
+.nav-links-footer li{
+    color:white;
+    font-family:Montserrat;
+    font-size:1rem;
+    margin-bottom:0.5rem;
+}
+.nav-links-footer li:hover{
+    text-decoration:underline;
+}
+.nav-links-footer ul{
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    padding:0;
+}
+.name-footer .social-links{
+    justify-content:start;
+}
+.name-footer a{
+    margin:0;
+    margin-right:1.5rem;
+    height:1.75rem;
+    position:relative;
+}
+.name-footer .social-media{
+    height:1.75rem;
+    margin:0;
+}
+.crédit{
+    font-family:Montserrat;
+    font-size:0.75rem;
+    color:white;
+}
+.language-content{
+    height:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:1rem;
+    padding-top:1rem;
+    cursor:pointer;
+}
+.language-logo{
+    height:100%;
+    transition: all 0.25s ease-in-out;
+}
+.language-text{
+    font-family:Montserrat;
+    color:white;
+    position:absolute;
+    margin-left:2rem;
+}
+.language-selector{
+    position:relative;
+    background-color:white;
+    border-radius:0.25rem;
+    display:flex;
+    flex-direction:column;
+    margin-top:1rem;;
+    z-index:5;
+    visibility:hidden;
+    transition:all 0.25s ease-in-out;
+    opacity:0;
+}
+.language-selector ul{
+    padding:0;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+.language-selector-text{
+    color:black;
+    font-family:Montserrat;
+    width:100%;
+    font-size:1rem;
+    padding:0.5rem;
+    position:relative;
+    box-sizing:border-box;
+    cursor:pointer;
+    display:flex;
+    height:2rem;
+    align-items:center;
+}
+.language-selector-text .language-logo{
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+}
+.language-selector-text:hover{
+    background-color:#ffecc2;
+    transition:all 0.5s ease-in-out;
+}
+/* Responsive */
+@media screen and (max-width:65rem){
+    footer{
+        flex-direction:column;
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    .name-footer{
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .social-links{
+        margin-bottom:1rem;
+    }
+}
+/* Override */
+.visible{
+    transition:all 0.25s ease-in-out;
+    opacity:100;
+    visibility:visible;
+}
+.invisible{
+    visibility:hidden;
+}
+footer .name-footer .social-links a{
+    margin:0;
+    margin-right:2rem;
+}

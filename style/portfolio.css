@@ -1,0 +1,222 @@
+/* Portfolio */
+.portfolio-container{
+    background-color:white;
+    width:60rem;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    padding:2rem;
+    box-sizing:border-box;
+}
+.portfolio-container h1{
+    text-align:left;
+}
+.portfolio-container .title-section{
+    align-items:start;
+}
+.portfolio-img{
+    width:100%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    position:relative;
+    object-fit:cover;
+    object-position:center;
+    max-height:30rem;
+}
+.alternate-img:hover{
+    box-shadow:0 0 5rem rgba(1,1,1,0.2);
+    transition:box-shadow 0.25s ease-in-out;
+}
+.alternate-img{
+    box-shadow:0 0 1rem rgba(1,1,1,0.2);
+    transition:box-shadow 0.25s ease-in-out;
+    margin:0;
+    margin-top:2rem;
+}
+.portfolio-text{
+    font-family:Montserrat;
+    font-weight:500;
+    font-size:1rem;
+    text-align:left;
+    line-height: 1.5rem;
+}
+.portfolio-button{
+    font-family:Montserrat;
+    font-size:1rem;
+    color:black;
+    border:1px solid black;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    text-transform:uppercase;
+    font-weight:500;
+    transition:background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    width:12.5rem;
+    text-align:center;
+    margin-bottom:2rem;
+    margin-top:1rem;
+}
+.flex{
+    position:relative;
+    display:flex;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.flex .portfolio-button{
+    margin:0;
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
+.portfolio-button:hover{
+    background-color:black;
+    color:white;
+    transition:background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.project-selection{
+    position:relative;
+    display:flex;
+    margin-top:3rem;
+    width:70rem;
+    max-width:90%;
+}
+.project-content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+}
+.year{
+    width:10rem;
+}
+.theme{
+    width:100%;
+    margin-left:4rem;
+}
+.project-text{
+    position:relative;
+    display:flex;
+    height:1.25rem;
+    width:100%;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+.project-logo{
+    height:100%;
+    transition: all 0.25s ease-in-out;
+}
+.rotate90deg{
+    transform: rotate(90deg);
+}
+.project-container{
+    position:relative;
+    display:flex;
+    margin-top:3rem;
+    width:70rem;
+    max-width:90%;
+}
+.project-box{
+    margin-bottom:1rem;
+    padding-bottom:1rem;
+    border-bottom:1px solid white;
+    display:flex;
+}
+.theme-box{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:5rem;
+    width:5rem;
+    border-radius: 0.5rem;
+    font-family:Montserrat;
+    font-size:1rem;
+    color:white;
+}
+.info{
+    background-color:rgb(93 90 195);
+}
+.network{
+    background-color:rgb(170 58 132);
+}
+.cyber{
+    background-color:rgb(199 127 108);
+}
+.project-description{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left:1rem;
+    width:calc(100% - 5rem);
+}
+.description-theme{
+    font-family:Montserrat;
+    font-size:1rem;
+    color:white;
+    margin:0;
+}
+.description-title{
+    font-family:Cardo;
+    font-size:1.5rem;
+    color:white;
+    margin:0;
+}
+.underline{
+    border-bottom:1px solid white;
+}
+.project-selector{
+    position:absolute;
+    background-color:white;
+    border-radius:0.25rem;
+    display:flex;
+    flex-direction:column;
+    z-index:5;
+    visibility:hidden;
+    transition:all 0.25s ease-in-out;
+    opacity:0;
+    width:100%;
+    margin-top:4rem;
+}
+.project-selector ul{
+    padding:0;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+/* Responsive */
+@media screen and (max-width:65rem){
+    .portfolio-container{
+        width:90%;
+    }
+}
+@media screen and (max-width:42.5rem){
+    .flex{
+        flex-direction:column;
+    }
+    .flex .portfolio-button{
+        margin:0;
+        margin-bottom:1rem;
+    }
+    .project-selection{
+        flex-direction:column;
+    }
+    .project-content{
+        width:100%;
+        margin:0;
+    }
+    .theme{
+        margin-top:1rem;
+    }
+    .project-container{
+        flex-direction:column;
+    }
+}
+/* Override */
+.visible{
+    transition:all 0.25s ease-in-out;
+    opacity:100;
+    visibility:visible;
+}
+.invisible{
+    visibility:hidden;
+}
